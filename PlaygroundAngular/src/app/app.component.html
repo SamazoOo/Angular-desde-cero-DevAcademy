@@ -1,0 +1,11 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+    <h1>
+        Welcome to {{ title }}!
+    </h1>
+    <h1>{{valueContador}}</h1>
+    <h1>{{today | date:'dd/MM/yyyy hh' }}</h1>
+    <span>TEXTO</span>
+    <input type="number" [(ngModel)]="valueContador" />
+    <app-contador [valueContador]="valueContador" (changeValue)="changeValueContador($event)"></app-contador>
+</div>
